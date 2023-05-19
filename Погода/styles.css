@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://wallpapercrafter.com/sizes/2560x1440/8017-northern-lights-aurora-borealis-aurora-sky-night-landscape-4k.jpg");
+    background-size: cover;
+}
+
+@keyframes main {
+    from {
+        filter: blur(5px);
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.caixa-maior {
+    background-color: #000000;
+    width: 95%;
+    max-width: 420px;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px rgb(0, 255, 179);
+    animation: main 2s;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 24px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+    width: calc(100% - 100px);
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    float: right;
+    cursor: pointer;
+    width: 80px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.5s;
+}
+
+button:hover {
+    background-color: #7c7c7c6b;
+    transform: scale(1.2);
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.caixa-menor {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.lupa {
+    height: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.temp {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.descricao {
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade {
+    color: #ffffff;
+    margin-top: 30px;
+}
